@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Math 3P</title>
+	<link href="../Image/icon.png" rel="icon" />
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<a href="../index.html"><img src="../Image/logo.png" width="14%" height="18%" id="logo"></a>
+    
+      <ul id="ulmenu">
+        <li class="menus"><a class="link" id="functions" href="funzioni.html">Funzioni</a></li>
+        <li class="menus"><a class="link" id="trigonom" href="trigonometria.html">Trigonometria</a></li>
+        <li class="menus"><a class="link" id="numecompl" href="numeri_complessi.html">Numeri Complessi</a></li>
+  </ul>
+      <h1 id="Trigo">Numeri Complessi</h1>
+      <div id="possibilita">
+        <button class="buttonNC" id="DefNC"><b>Definizione</b></button><br>
+        <button class="buttonNC" id="ConfNC" ><b>Uguaglianza</b></button><br>
+        <button class="buttonNC" id="ModNC" ><b>Modulo</b></button><br>
+        <button id="op">Operazioni</button><br>
+        <button class="buttonNC" id="AddNC"><b>Addizione</b></button><br>
+        <button class="buttonNC" id="SotNC"><b>Sottrazione</b></button><br>
+        <button class="buttonNC" id="MoltNC"><b>Moltiplicazione</b></button><br>
+        <button class="buttonNC" id="RecNC"><b>Reciproco</b></button><br>
+        <button class="buttonNC" id="DivNC"><b>Divisione</b></button><br>
+        <button class="buttonNC" id="PotNC"><b>Potenza</b></button><br>
+      </div>
+    <img id="lavagna" src="../Image/N.C/lavagna.jpg">
+    <div id="SpiegazioneNC">Qui verrà visualizzata la spiegazione della voce<br> selezionata</div>
+     <img src="../Image/calc.png" id="cal" onclick="cal()">
+    <div id="calcolatrice">
+        <div class="content">
+            <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+        </div>
+        <div class="content">
+        <div class="content">
+            <input type="submit" id="7" value="7" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="8" value="8" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="9" value="9" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="/" value="/" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="4" value="4" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="5" value="5" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="6" value="6" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="*" value="X" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="1" value="1" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="2" value="2" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="3" value="3" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" value="C" onclick="cancella()" class="tasto">
+            <input type="submit" id="0" value="0" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="." value="." onclick="n(this.id)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="n(this.id)" class="tasto">
+            </div>
+            <div class="content">
+                <button value="=" onclick="operazione()" class="uguale tasto">=</button>
+            </div>
+        </div>
+    </div>
+    <img id="social" src="../Image/social.png">
+    <a href="https://instagram.com/iti_3p" target="_blank"><div id="igr"></div></a>
+    <a href="http://www.iiscopernico.edu.it/" target="_blank"><div id="sitosc"></div></a>
+    <script src="../script.js"></script>
+    <script src="../nc.js"></script>
+  </body>
+</html>

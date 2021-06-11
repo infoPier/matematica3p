@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Math 3P</title>
+    <link href="../Image/icon.png" rel="icon"/>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <a href="../index.html"><img src="../Image/logo.png" width="14%" height="18%" id="logo"></a>
+      <img src="../Image/calc.png" id="cal" onclick="cal()">
+    <div id="calcolatrice">
+        <div class="content">
+            <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+        </div>
+        <div class="content">
+        <div class="content">
+            <input type="submit" id="7" value="7" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="8" value="8" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="9" value="9" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="/" value="/" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="4" value="4" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="5" value="5" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="6" value="6" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="*" value="X" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="1" value="1" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="2" value="2" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="3" value="3" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" value="C" onclick="cancella()" class="tasto">
+            <input type="submit" id="0" value="0" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="." value="." onclick="n(this.id)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="n(this.id)" class="tasto">
+            </div>
+            <div class="content">
+                <button value="=" onclick="operazione()" class="uguale tasto">=</button>
+            </div>
+        </div>
+    </div>
+      <ul id="ulmenu">
+        <li class="menus"><a class="link" id="functions" href="funzioni.html">Funzioni</a></li>
+        <li class="menus"><a class="link" id="trigonom" href="trigonometria.html">Trigonometria</a></li>
+        <li class="menus"><a class="link" id="numecompl" href="numeri_complessi.html">Numeri Complessi</a></li>
+  </ul>
+      <h1 id="Trigo">Funzioni</h1>
+      <h3 id="SottoTitoloFunzioni">Studio della funzione</h3>
+      <h3 id="funziones">$$f(x)=\frac{x^2-1}{x^2-7x+6}$$</h3>
+    <!--<h2 id="SottFunz">Studio di funzione</h2><p id="operaz">Studiamo la seguente funzione: <br>$$\frac{x^2-1}{x^2-7x+6}$$</p> -->
+    <div id="elenco"><p id="domin">Dominio</p><p id="evenSimm">Eventuali simmetrie</p><p id="studSegn">Studio del segno</p><p id="limiTiF">Limiti della funzione &</br>Ricerca degli asintoti</p>
+    <p id="deduZGR">Deduzione del grafico <br>probabile</p><p id="calcDELleDer">Calcolo delle derivate</p><p id="SegnODErPR">Studio del segno della<br>derivata prima</div>
+    <div class="slidecontainer" id="ruotato">
+    <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+    </div>
+    <div id="SpiegazioneFunz"> </div>
+    <!--DOMINIO-->
+    <div class="spieg" id="dom">
+    <h2 id="domFunz">Dominio</h2>
+    <p id="studDom">Come prima cosa si determina il <a id="dominioLink"class="divAcomparsa">dominio</a> di questa funzione: essendo fratta si deve porre il $$denominatore \ne0 $$ <br> quindi $$x^2-7x+6\ne0$$
+    per risolver la disuguaglianza occorre scomporre il primo membro tramite la regola del trinomio speciale, ciò significa che esso risulta: $$(x-6)(x-1)\ne0$$ e gli unici due valori assumibili dalla x per la quale non si avvera l'equazione sono 6 e 1, quindi il dominio (essendo un insieme) si può scrivere nei seguenti modi:
+    $$D=\Re - \{1;6\}$$ $$D=\{x\in \Re|x \ne 1 \wedge x\ne6\}$$ $$D: \left]- \infty ;1 \right[ \cup \left] 1;6 \right[ \cup \left] 6;+\infty \right[$$</p>
+    </div>
+    <!--SIMMETRIE-->
+    <div class="spieg" id="simm">
+    <h2 id="evenSim">Eventuali simmetrie</h2>
+    <p id="Sim">Ora si determina se vi sono eventuali simmetrie all'interno della funzione, quindi si stabilisce le la funzione è pari, dispari o nessuna delle due:<br>
+      perchè una funzione sia <a id="funPari" class="divAcomparsa">pari</a> $$f(-x) = f(x)$$ e perchè sia <a class="divAcomparsa" id="fundisp">dispari</a>$$f(-x) = -f(x)$$ quindi si calcola f(-x) per stabilire se è uguale a f(x) o -f(x) $$f(-x)= \frac {x^2}{x^2+7x+6}$$ $$f(-x) \ne \frac{x^2-1}{x^2-7x+6}  \Longrightarrow  f(-x) \ne f(x)$$ $$f(-x) \ne -\frac{x^2}{x^2+7x+6}  \Longrightarrow  f(-x) \ne -f(x)$$ quanto riportato sopra 
+      spiega che la funzione non è né pari né dispari nel suo dominio quindi non vi sono simmetrie.
+    </p>
+    </div>
+    <!--SEGNO-->
+    <div id="segn" class="spieg">
+    <h2 id="studSegn">Studio del segno</h2>
+    <p id="StudioSegn">Arrivati a questo punto si può procedere con lo <a id="segnoLink" class="divAcomparsa">studio del segno</a> della funzione: per studiare il segno della funzione si studia prima il segno del numeratore poi quello del denominatore e infine si mettono a confronto</p>
+    <img src="../Image/StudioSegno.png" id="imgSegn">
+    </div>
+    <!--
+    LIMITI-->
+    <div id="asin" class="spieg">
+    <h2 id="limFun">Calcolo dei limiti & Ricerca degli asintoti</h2>
+    <p id="asint">Adesso bisogna calcolare i <a id="LinkLim" class="divAcomparsa">limiti</a> agli estremi del dominio ed il calcolo di eventuali asintoti. Quindi calcoliamo: $$\lim_{x\to + \infty}{\frac{x^2-1}{x^2-7x+6}} = \frac{x^2 (1-\frac{1}{x^2}}{x^2 (1-\frac{7}{x}-\frac{6}{x^2})} = \frac{x^2}{x^2} = 1^+$$
+      $$\lim_{x\to - \infty}{\frac{x^2-1}{x^2-7x+6}} = \frac{x^2}{x^2} = 1^+$$
+      $$\lim_{x\to 6^-}{\frac{x^2-1}{x^2-7x+6}} = \frac{36-1}{36-42^-+6} = \frac{35}{0^-} = +\infty$$
+      $$\lim_{x\to 6^+}{\frac{x^2-1}{x^2-7x+6}} = \frac{36-1}{36-42^++6} = \frac{35}{0^+} = -\infty$$
+      $$\lim_{x\to 1}{\frac{x^2-1}{x^2-7x+6}} = \frac{(x+1)(x-1)}{(x-1)(x-6)} = \frac{2}{-5} = -\frac{2}{5}$$
+    <a id="LinkAsin" class="divAcomparsa">Asintoti</a>:
+    $$Orizzontale: y=1$$
+    $$Verticale: x=6$$
+    </p>
+    </div>
+    <!--GRAFICO PROBABILE-->
+    <div id="graProbabil" class="spieg">
+    <a id="LinkGrafProb" class="divAcomparsa"><h2 id="grafProb">Grafico probabile</h2></a>
+    <p id="pGraf">Riassumendo abbiamo: $$f(x)>0&ensp;per&ensp;x&lt-1 \vee x&gt6$$ $$f(x)&lt0&ensp;per&ensp;-1&ltx&lt6 \wedge x \ne 1$$ $$f(x)=0 \Longrightarrow P_x(-1;0)$$ $$f(0)=-\frac{1}{6} \Longrightarrow P_y(0;-\frac{1}{6})$$ $$Asintoto&ensp;orizzontale: y=1$$ $$Asintoto&ensp;verticale: x=6$$
+    </p>
+    <img src="../Image/Grafic_prob.png" id="graficoProb">
+    </div>
+    <!--Calcolo derivata-->
+    <div id="calcoloDeriv" class="spieg">
+    <h2 id="calcDerivata">Calcolo della derivata prima</h2>
+    <p>Arrivati fino a qua si calcola la <a id="LinkDeriv" class="divAcomparsa">derivata prima</a> di questa funzione: $$D\left[\frac{x^2-1}{x^2-7x+6}\right]=$$ $$D\left[x^2-1\right] = 2x$$ $$D\left[x^2-7x+6\right]=2x-7$$ $$=\frac{2x(x^2-7x+6)-(2x-7)(x^2-1)}{(x^2-7x+6)^2=}$$ $$=\frac{2x^3-14x^2+12x-(2x^3-7x^2-2x+7)}{(x^2-7x+6)^2}=$$ $$=\frac{-7(x-1)}{(x-1)(x^2-12x+36)} = \frac{-7}{(x-6)^2}$$</p>
+    </div>
+    <!--DERIVATE-->
+    <div id="studSegnDeriv"class="spieg">
+    <h2 id="segn deriv">Studio del segno della derivata prima</h2>
+    <p>Come ultimo punto si <a id="LinkSegnDeriv" class="divAcomparsa">studia il segno della derivata</a> per controllare gli intervalli di monotonia della funzione</p>
+    <img src="../Image/segno_deriv.png">
+    <p>La funzione è decrescente in tutto il suo dominio</p>
+    </div>
+    <div id="Wikidom" class="wiki"><div style="background-color:white;"><b>Dominio</b><br>Il dominio naturale di una funzione è l'insieme più ampio dei valori che può assumere la x tale che esista la sua corrispondente y<br><img src="../Image/dominioFunz.png"></div></div>
+    <div id="WikiFunzPari" class="wiki"><div style="background-color:white;"><b>Funzione pari</b><br>Una funzione si definisce pari nel suo dominio se $$f(-x) = f(x) \forall x \in D (dominio)$$<br>A livello di rappresentazione grafica significa che il grafico risulta simmetrico rispetto all'asse y<br><center><img src="../Image/quartica-funzione-pari.png" width="200px" height="200px"></center></div></div>
+    <div id="WikiFunzdis" class="wiki"><div style="background-color:white;"><b>Funzione dispari</b><br>Una funzione si definisce dispari nel suo dominio se $$f(-x) = -f(x) \forall x \in D (dominio)$$<br>A livello di rappresentazione grafica significa che il grafico risulta simmetrico rispetto all'origine<br><center><img src="../Image/funzdispari.png" width="200px" height="200px"></center></div></div>
+    <div id="Wikisegno" class="wiki"><div style="background-color:white;"><b>Studio del segno</b><br>Studiare il segno di una funzione significa determinare per quali x la corrispondente immagine è positiva, negativa o nulla<br><center><img src="../Image/studioSegn.png" width="200px" height="200px"></center></div></div>
+    <div id="WikiAsintoti" class="wiki"><div style="background-color:white;"><b>Asintoti</b><br>In geometria, retta a cui una curva si avvicina indefinitamente. In partic., la tangente alla curva in un punto all’infinito; oppure, con sign. più preciso e più generale, qualsiasi retta la cui distanza da un punto che percorra la curva allontanandosi indefinitamente tende a zero <br><img src="../Image/asintoti.png" width="200px" height="200px"></div></div>
+    <div id="WikiLimiti" class="wiki"><div style="background-color:white;"><b>Limite</b>La funzione f(x) ha per limite il numero reale l, per x che tende a x<sub>0</sub>, quando, comunque si scelga un numero reale positivo &#949;, si può determinare un intorno completo I di x<sub>0</sub> tale che<br> |f(x)-l|&lt&#949;<br> per ogni x appartenente a I, diverso (al più) da x<sub>0</sub><br>Si scrive: $$\lim_{x\to x_0}{f(x)}=l$$<br><center><img src="../Image/limitedef.png" width="200px" height="200px"></center></div></div>
+    <div id="WikigrafProb"class="wiki"><div style="background-color:white;"><b>Grafico Probabile</b><br>Tracciare il grafico probabile significa tracciare un grafico il più possibile simile a quello della funzione<br><center><img src="../Image/graficoProbDiv.jpg" width="200px" height="200px"></center></div></div>
+    <div id="Wikideriv" class="wiki"><div style="background-color:white;"><b>Derivata</b><br>Data una funzio y=f(x), definita in un intervallo [a;b], la derivata della funzione nel punto cinterno all'intervallo è il limite, se esiste ed è finito, per h che tende a 0, del rapporto incrementale di f relativo a c: $$D(f(x))=\lim_{x\to h}{\frac{f(c+h)-f(c)}{h}}$$ Essa rappresenta il coefficiente angolare della retta tangente al grafico della funzione nel punto di ascissa c<br><center><img src="../Image/derivate.png" width="200px" height="200px"></center>
+    </div></div>
+    <div id="WikisegnoDeriv" class="wiki"><div style="background-color:white;"><b>Segno della derivata</b><br>Serve a determinare gli intervalli di monotonia della funzione: <ul><li>Se >0 la funzione è crescente in quell' intervallo</li><li>Se &lt0 la funzione è decrescente in quell'intervallo</li></ul><center><img src="../Image/segnoDeriv.gif" width="360px" height="150px"></center></div></div>
+    <img id="social" src="../Image/social.png">
+    <a href="https://instagram.com/iti_3p" target="_blank"><div id="igr"></div></a>
+    <a href="http://www.iiscopernico.edu.it/" target="_blank"><div id="sitosc"></div></a>
+    <script src="../slider.js"></script>
+    <script src="../script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  </body>
+</html>

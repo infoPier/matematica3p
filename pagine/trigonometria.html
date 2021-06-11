@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Math 3P</title>
+	<link href="../Image/icon.png" rel="icon" />
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.css" />
+
+</head>
+
+<body>
+	<a href="../index.html"><img src="../Image/logo.png" width="14%" height="18%" id="logo"></a>
+     
+      <ul id="ulmenu">
+        <li class="menus"><a class="link" id="functions" href="funzioni.html">Funzioni</a></li>
+        <li class="menus"><a class="link" id="trigonom" href="trigonometria.html">Trigonometria</a></li>
+        <li class="menus"><a class="link" id="numecompl" href="numeri_complessi.html">Numeri Complessi</a></li>
+  </ul>
+    <h1 id="Trigo">Trigonometria</h1>
+    <iframe scrolling="no" title="Funzioni goniometriche" src="https://www.geogebra.org/material/iframe/id/pjyfhvkt/width/925/height/629/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="700px" height="476px" style="border:0px;" allowfullscreen="" id="geogebraFrame0"> </iframe>
+    
+
+    <div id="menu">
+        <div id="icon" onclick="menu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <h3 id="divGogn" onclick="gonio()" class="listaTrig"><img id="fre" src="../Image/freccia.png" width="10px" height="10px" >Goniometria</h3>
+        <div class="listaTrig" id="goniometria">
+            <p class="listaTrig" id="introg">INTRODUZIONE</p>
+            <p class="listaTrig" id="gra_rad">CONVERSIONE GRADI-RADIANTI E VICEVERSA</p>
+            <p class="listaTrig" id="sincos">FUNZIONI GONIOMETRICHE SENO E COSENO</p>
+            <p class="listaTrig" id="part">CASI PARTICOLARI</p>
+            <p class="listaTrig" id="gracos">GRAFICO DELLA FUNZIONE COSENO IN [0 ; 2π]</p>
+            <p class="listaTrig" id="grasin">GRAFICO DELLA FUNZIONE SENO IN [0 ; 2π]</p>
+            <p class="listaTrig" id="relgon">RELAZIONI FONDAMENTALI DELLA GONIOMETRIA</p>
+            <p class="listaTrig" id="tan">FUNZIONE TANGENTE</p>
+            <p class="listaTrig" id="angpart">FUNZIONI GONIOMETRICHE DI ANGOLI PARTICOLARI</p>
+            <p class="listaTrig" id="eqdisgon">EQUAZIONI E DISEQUAZIONI GONIOMETRICHE</p>
+        </div>
+        <h3 id="divTrigo" onclick="trigo()" class="listaTrig"><img id="frec" src="../Image/freccia.png" width="10px" height="10px" class="listaTrig">Trigonometria</h3>
+        <div class="listaTrig" id="trigonometria">
+            <p class="listaTrig" id="introt">INTRODUZIONE</p>
+            <p class="listaTrig" id="teotrig">TEOREMI DELLA TRIGONOMETRIA</p>
+            <p class="listaTrig" id="triarett">RISOLUZIONE TRIANGOLI RETTANGOLI</p>
+            <p class="listaTrig" id="triaqual">TRIANGOLI QUALUNQUE</p>
+            
+        </div>
+    </div>
+
+    <div class="divT" id="divIntrog">
+        <h2>INTRODUZIONE</h2><br>
+        <p>Per descrivere la posizione del punto considerando un solo parametro (r=raggio) ci sono due modi:<br><br>
+        <img src="../Image/intro1.png" width="20%" height="20%">&emsp;&emsp;&emsp;&emsp;&emsp;<img src="../Image/intro2.png"width="20%" height="20%"><br>
+          1) mediante l’angolo α misurato in gradi (°).<br>  
+          2) Fornendo la misura dell’arco orientato che, partendo dal punto A arriva fino al punto P misurato in radianti.<br><br>
+          Supponiamo che l’arco abbia lunghezza l e che il raggio della circonferenza abbia lunghezza r, allora la lunghezza 
+          dell’arco AP i radianti si ottiene facendo il rapporto tra la lunghezza dell’arco e la lunghezza del raggio 
+          (misurati con la stessa unità di misura).<br><br>$$AP_{RAD}=\frac{l}{r}$$</p>
+    </div>
+    <div class="divT" id="divGra_rad">
+        <h2>CONVERSIONE GRADI-RADIANTI E VICEVERSA</h2><br>
+        <p>α<sub>rad</sub> : α° = 2π : 360 ← misura angolo giro in gradi<br>misura angolo giro in radianti</p>
+    </div>
+    <div class="divT" id="divSincos">
+        <h2>FUNZIONI GONIOMETRICHE SENO E COSENO</h2><br>
+        <p>OA = 1 data una circonferenza goniometrica, si definiscono<br><b>cos α:</b> funzione che ad un angolo α associa il valore 
+        dell’ascissa del punto P individuato dall’angolo → cos α = x<sub>P</sub><br> 
+        All’ampiezza di un angolo viene associato un numero reale compreso tra -1 e 1<br><b>sin α:</b> funzione che ad un angolo α associa 
+        il valore dell’ordinata del punto P individuato dall’angolo → sin α = y<sub>P</sub><br>
+        All’ampiezza di un angolo viene associato un numero reale compreso tra -1 e 1<br>
+        Se la circonferenza ha raggio ≠ 1 allora $$cos α=\frac{xP}{r}$$   $$sin α=\frac{yP}{r}$$
+        <img src="../Image/senocos.png" width="20%" height="20%">
+        </p>
+    </div>
+    <div class="divT" id="divPart">
+        <h2>CASI PARTICOLARI</h2>
+        <p>
+        Se  α=0 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; allora &emsp;     cos α = 1  e  sin α = 0<br>
+        Se  0<α<π/2 &emsp;&emsp;&emsp;&thinsp;&nbsp;&nbsp; allora &emsp;     0 < cos α < 1  e  0 < sin α < 1<br>
+        Se  α=π/2 &emsp;&emsp;&emsp;&emsp;&thinsp;&nbsp;&nbsp; allora  &emsp;   cos α = 0  e  sin α = 1<br>
+        Se  π/2<α<π	&emsp;&emsp;&emsp;&nbsp;&nbsp; allora   &emsp; -1 < cos α < 0  e  0 < sin α < 1<br>
+        Se  α=π &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; allora &emsp;    cos α = -1  e  sin α = 0<br>
+        Se  π<α<(3/2)*π &emsp;&emsp; allora  &emsp;   -1 < cos α < 0  e  -1 < sin α < 0<br>
+        Se  α=(3/2)*π &emsp;&emsp;&emsp;  allora  &emsp;   cos α = 0  e  sin α = 1<br>
+        Se  (3/2)*π<α< 2π &emsp;&nbsp;          allora  &emsp;   0 < cos α < 1  e  -1 < sin α < 0<br>
+        Se  α=2π &emsp;&emsp;&emsp;&emsp;&emsp; allora  &emsp;   cos α = 1  e  sin α = 0<br><br>
+        NB: I valori assunti dalla funzione seno e dalla funzione coseno sono compresi tra -1 e 1<br>
+        -1 < cos α < 1 		e  	-1 < sin α < 1</p>
+    </div>
+    <div class="divT" id="divGracos">
+        <h2>GRAFICO DELLA FUNZIONE COSENO IN [0 ; 2π]</h2>
+        <p>La funzione cos x è periodica nel periodo 2π<br>
+		&emsp;&emsp;&emsp;cos x = cos(x + 2kπ)	k ∈ Z<br>
+        Il grafico completo della funzione coseno si chiama <b>COSINUSOIDE</b> e si ottiene ripetendo il grafico relativo 
+        all’intervallo [0;2π] infinite volte<br><br>
+        <img src="../Image/grafico_coseno.png"><br>
+        D: R<br>
+        C: [-1;1]<br>
+        funzione periodica → cos x = cos (x + 2kπ)<br>
+        funzione pari → cos (-x) = cos (x)<br>
+        </p>
+    </div>
+    <div class="divT" id="divGrasin">
+        <h2>GRAFICO DELLA FUNZIONE SENO IN [0 ; 2π]</h2>
+        <p>La funzione seno è una funzione periodica di periodo 2π<br> 
+	    &emsp;&emsp;&emsp;sin x = sin(x + 2kπ)  k∈Z<bR>
+        Il grafico completo della funzione seno si chiama <b>SINUSOIDE</b> e si ottiene ripetendo il grafico relativo
+        all’intervallo [0;2π] infinite volte.<br><br>
+        <img src="../Image/grafico_seno.png"><br>
+        D: R<br>
+        C: [-1;1]<br>
+        funzione non inettiva<br>
+        funzione dispari → sin (-x) = -sin (x)<br>
+
+    </div>
+    <div class="divT" id="divRelgon">
+        <h2>RELAZIONI FONDAMENTALI DELLA GONIOMETRIA</h2>
+        <p>Per il teorema di Pitagora si possono scrivere le seguenti relazioni: <ul><li>xp<sup>2</sup> + yp<sup>2</sup> = 1</li><li>cos<sup>2</sup> α + sin<sup>2</sup> α = 1</li><li>cos α = &plusmn; &#8730;1-sin<sup>2</sup>α</li><li>sin α = &plusmn; &#8730;1-cos<sup>2</sup>α</li></ul></p>
+        <img src="../Image/prima_fond.jpg"><br>
+    </div>
+    <div class="divT" id="divTan">
+        <h2>FUNZIONE TANGENTE</h2>
+        <p>Dato un angolo orientato α <br><b>tan α</b> è la funzione che associa ad α il rapporto, quando esiste, fra l’ordinata e l’ascissa del punto P
+        <br><br><img src="../Image/grafico_tangente.png"><br>
+        <br> $$tan α=\frac{PA}{OP}=\frac{sin α}{cos α}$$
+        </p>
+    </div>
+    <div class="divT" id="divAngpart">
+        <h2>FUNZIONI GONIOMETRICHE DI ANGOLI PARTICOLARI</h2>
+        <p> $$angolo \frac{π}{6}$$<br>
+         $$angolo \frac{π}{4}$$<br>
+        $$angolo \frac{π}{3}$$</p>
+    </div>
+    <div class="divT" id="divEqdisgon">
+        <h2>EQUAZIONI E DISEQUAZIONI GONIOMETRICHE</h2>
+        <p>Un’equazione goniometrica contiene almeno una funzione goniometrica che ha come argomento l’incognita.<br>
+        Preso un qualsiasi alfa nel primo quadrante ci sono 3 angoli che hanno lo stesso seno e lo stesso coseno di alfa eventualmente cambiati di segno.</p>
+    </div>
+    <!-- Trigonometria -->
+    <div class="divT" id="divIntrot">
+        <h2>Introduzione<h2>
+      <p>In un triangolo rettangolo: <ul><li>$$cos&emsp;α=\frac{cateto&emsp;adiacente}{ipotenusa}$$</li><li>$$sin&emsp;α=\frac{cateto&emsp;opposto}{ipotenusa}$$</li><li>$$tan&emsp;α=\frac{cateto&emsp;opposto}{cateto&emsp;adiacente}$$</li></ul></p>
+      <img src="../Image/transparent.png" id="relazTrigonom">
+    </div>
+    <div class="divT" id="divTeotrig">
+      <h2>TEOREMI DELLA TRIGONOMETRIA</h2>
+      <h3>Primo Teorema</h3>
+      <p>&emsp;&emsp;&emsp;In un triangolo rettangolo:<br>&emsp;&emsp;&emsp;CATETO&emsp;=&emsp;IPOTENUSA&emsp;*&emsp;cos angolo adiacente<br>&emsp;&emsp;&emsp;CATETO&emsp;=&emsp;IPOTENUSA&emsp;*&emsp;sin angolo opposto</p>
+      <h3>Secondo teorema: </h3>
+      <p>&emsp;&emsp;&emsp;In un triangolo rettangolo:<br>&emsp;&emsp;&emsp;CATETO&emsp;=&emsp;ALTRO CATETO&emsp;*&emsp;tan angolo opposto</p>
+      <img src="../Image/teoremiTrigonom.png" id="teoremiTrig">
+    </div>
+    <div class="divT" id="divTriarett">
+      <h2>RISOLUZIONE TRIANGOLI RETTANGOLI</h2>
+      <p>Risolvere un triangolo rettangolo significa determinare la misura dei suoi 3 lati e l’ampiezza dei suoi angoli conoscendo 1 lato ed un altro dei suoi elementi (o un altro lato o un altro angolo).</p>
+      <center><img src="../Image/risolTriangolo.png"></center>
+    </div>
+    <div class="divT" id="divTriaqual">
+      <h2>TRIANGOLI QUALUNQUE</h2>
+      <h3>Teorema dei seni</h3>
+      <p>In un triangolo le misure dei lati sono proporzionali ai seni degli angoli opposti.$$\frac{a}{sin&nbsp;&nbsp;&nbsp;&nbsp;α}=\frac{b}{sin&nbsp;&nbsp;&nbsp;&nbsp;𝛽}=\frac{c}{sin&nbsp;&nbsp;&nbsp;&nbsp;ɣ}$$ $$\frac{a}{b}=\frac{sin&nbsp;&nbsp;&nbsp;&nbsp;α}{sin&nbsp;&nbsp;&nbsp;&nbsp;𝛽}$$ $$\frac{a}{c}=\frac{sin&nbsp;&nbsp;&nbsp;&nbsp;α}{sin&nbsp;&nbsp;&nbsp;&nbsp;ɣ}$$ $$\frac{b}{c}=\frac{sin&nbsp;&nbsp;&nbsp;&nbsp;𝛽}{sin&nbsp;&nbsp;&nbsp;&nbsp;ɣ}$$</p>
+      <h3>Teorema del coseno</h3>
+      <p>In un triangolo il quadrato della misura di un lato è uguale alla somma dei quadrati delle misure degli altri due lati meno il doppio prodotto delle misure di questi due lat per il coseno dell’angolo compreso tra gli assi. $$a^2=b^2+c^2-2bc*cos&nbsp;&nbsp;&nbsp;&nbsp;α$$ $$b^2=a^2+c^2-2ac*cos&nbsp;&nbsp;&nbsp;&nbsp;𝛽$$ $$c^2=a^2+b^2-2ab*cos&nbsp;&nbsp;&nbsp;&nbsp;ɣ$$</p>
+    </div>
+
+
+     <img src="../Image/calc.png" id="cal" onclick="cal()">
+    <div id="calcolatrice">
+        <div class="content">
+            <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+        </div>
+        <div class="content">
+        <div class="content">
+            <input type="submit" id="7" value="7" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="8" value="8" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="9" value="9" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="/" value="/" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="4" value="4" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="5" value="5" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="6" value="6" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="*" value="X" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="1" value="1" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="2" value="2" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="3" value="3" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" value="C" onclick="cancella()" class="tasto">
+            <input type="submit" id="0" value="0" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="." value="." onclick="n(this.id)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="n(this.id)" class="tasto">
+            </div>
+            <div class="content">
+                <button value="=" onclick="operazione()" class="uguale tasto">=</button>
+            </div>
+        </div>
+    </div>
+    <img id="social" src="../Image/social.png">
+    <a href="https://instagram.com/iti_3p" target="_blank"><div id="igr"></div></a>
+    <a href="http://www.iiscopernico.edu.it/" target="_blank"><div id="sitosc"></div></a>
+  </body>
+  <script src="../script.js"></script>
+  <script src="../menu.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+</html>
