@@ -1,0 +1,15 @@
+.MathJax_Display{
+  text-align: left !important;
+  display: inline !important;
+}
+body{
+  background-image: url(../Image/sfondo.png);
+}
+input[type=checkbox]{
+  text-align: left;
+  display: inline;
+}
+
+form{
+  width:30%;
+}
