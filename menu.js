@@ -1,0 +1,300 @@
+function menu(){
+    if(document.getElementById("menu").style.left!="0%"){
+        document.getElementById("menu").style.left="0%";
+    }
+    else{
+        document.getElementById("menu").style.left="-15%";
+    }
+}
+
+
+function gonio(){
+    if(document.getElementById("fre").style.transform == 'rotate(90deg)'){
+        document.getElementById("fre").style.transform = "rotate(0deg)";
+    }
+    else{
+      document.getElementById("fre").style.transform="rotate(90deg)";
+    }
+    if(document.getElementById("fre").style.transform == 'rotate(0deg)'){
+        document.getElementById("goniometria").style.display="none";
+        document.getElementById("divTrigo").style.top="5%";
+        document.getElementById("menu").style.height="100%";
+        document.getElementById("trigonometria").style.top="10%";
+    }
+    else{
+        document.getElementById("goniometria").style.display="block";
+        document.getElementById("divTrigo").style.top="80%";
+        if(document.getElementById("trigonometria").style.display=='block'){
+            document.getElementById("menu").style.height="140%";
+            document.getElementById("divTrigo").style.top ="65%";
+            document.getElementById("trigonometria").style.top="70%";
+        }
+        else{
+            document.getElementById("menu").style.height="120%";
+            document.getElementById("divTrigo").style.top ="75%";
+            document.getElementById("trigonometria").style.top="80%";
+            
+        }
+    }
+   
+}
+function trigo(){
+    if(document.getElementById("frec").style.transform == 'rotate(90deg)'){
+        document.getElementById("frec").style.transform = "rotate(0deg)";
+    }
+    else{
+      document.getElementById("frec").style.transform="rotate(90deg)";
+    }
+    if(document.getElementById("frec").style.transform == 'rotate(0deg)'){
+    document.getElementById("trigonometria").style.display="none";
+    }
+    else{
+        document.getElementById("trigonometria").style.display="block";
+        if(document.getElementById("divTrigo").style.top =='75%'){
+            document.getElementById("menu").style.height="140%";
+            document.getElementById("divTrigo").style.top ="65%";
+            document.getElementById("trigonometria").style.top="70%";
+        }
+   
+    }
+}
+//Goniometria
+document.getElementById("introg").addEventListener("click",function(event){
+    document.getElementById("divIntrog").style.display="block";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("gra_rad").addEventListener("click",function(event){
+    document.getElementById("divGra_rad").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("sincos").addEventListener("click",function(event){
+    document.getElementById("divSincos").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("part").addEventListener("click",function(event){
+    document.getElementById("divPart").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("gracos").addEventListener("click",function(event){
+    document.getElementById("divGracos").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("grasin").addEventListener("click",function(event){
+    document.getElementById("divGrasin").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("tan").addEventListener("click",function(event){
+    document.getElementById("divTan").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("angpart").addEventListener("click",function(event){
+    document.getElementById("divAngpart").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("eqdisgon").addEventListener("click",function(event){
+    document.getElementById("divEqdisgon").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+//Trigonometria
+document.getElementById("introt").addEventListener("click",function(event){
+    document.getElementById("divIntrot").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("relgon").addEventListener("click",function(event){
+    document.getElementById("divRelgon").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("teotrig").addEventListener("click",function(event){
+    document.getElementById("divTeotrig").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("triarett").addEventListener("click",function(event){
+    document.getElementById("divTriarett").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriaqual").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})
+document.getElementById("triaqual").addEventListener("click",function(event){
+    document.getElementById("divTriaqual").style.display="block";
+    document.getElementById("divIntrog").style.display="none";
+    document.getElementById("divGra_rad").style.display="none";
+    document.getElementById("divSincos").style.display="none";
+    document.getElementById("divPart").style.display="none";
+    document.getElementById("divGracos").style.display="none";
+    document.getElementById("divGrasin").style.display="none";
+    document.getElementById("divTan").style.display="none";
+    document.getElementById("divAngpart").style.display="none";
+    document.getElementById("divEqdisgon").style.display="none";
+    document.getElementById("divIntrot").style.display="none";
+    document.getElementById("divRelgon").style.display="none";
+    document.getElementById("divTeotrig").style.display="none";
+    document.getElementById("divTriarett").style.display="none";
+    document.getElementById("geogebraFrame0").style.display="none";
+})

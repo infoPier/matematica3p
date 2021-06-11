@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Math 3P</title>
+	<link href="Image/icon.png" rel="icon" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<a href="../index.html"><img src="Image/logo.png" width="14%"   height="18%" id="logo"></a>
+    <img src="Image/calc.png" id="cal" onclick="cal()">
+    <div id="calcolatrice">
+        <div class="content">
+            <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+        </div>
+        <div class="content">
+        <div clinputass="content">
+            <input type="submit" id="7" value="7" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="8" value="8" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="9" value="9" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="/" value="/" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="4" value="4" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="5" value="5" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="6" value="6" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="*" value="X" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" id="1" value="1" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="2" value="2" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="3" value="3" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="n(this.id)" class="tasto">
+        </div>
+        <div class="content">
+            <input type="submit" value="C" onclick="cancella()" class="tasto">
+            <input type="submit" id="0" value="0" onclick="n(this.id)" class="tasto">
+            <input type="submit" id="." value="." onclick="n(this.id)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="n(this.id)" class="tasto">
+            </div>
+            <div class="content">
+                <button value="=" onclick="operazione()" class="uguale tasto">=</button>
+            </div>
+        </div>
+    </div>
+    <ul id="ulmenu">
+          <li class="menus"><a class="link" id="functions" href="pagine/funzioni.html">Funzioni</a></li>
+          <li class="menus"><a class="link" id="trigonom" href="pagine/trigonometria.html">Trigonometria</a></li>
+          <li class="menus"><a class="link" id="numecompl" href="pagine/numeri_complessi.html">Numeri Complessi</a></li>
+    </ul>
+    <h1 id="home">Home</h1>
+    <h2 id="benv">Benvenuto nel nostro sito!</h2>
+    <p id="intr">Questo è un sito che spiega alcuni degli argomenti svolti dalla classe 3°P durante l'anno scolastico 2020-2021:</p>
+    <a class="linkhome" href="pagine/funzioni.html"><div class="arg" id="divfunzioni"><div class="scritta">Funzioni</div></div></a>
+    <a class="linkhome" href="pagine/trigonometria.html"><div class="arg" id="divtrig"><div class="scritta">Trigonometria</div></div></a>
+    <a class="linkhome" href="pagine/numeri_complessi.html"><div class="arg" id="divnumcomp"><div class="scritta">Numeri Complessi</div></div></a>
+    <img id="social" src="Image/social.png">
+    <a href="https://instagram.com/iti_3p" target="_blank"><div id="igr"></div></a>
+    <a href="http://www.iiscopernico.edu.it/" target="_blank"><div id="sitosc"></div></a>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
